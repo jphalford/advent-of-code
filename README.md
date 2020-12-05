@@ -55,7 +55,7 @@ interface. The `CompliantPasswordCounter` can then be implemented and test
 
 ## Day 3: Toboggan Trajectory
 
-**Entry Point:** [Day2](./src/main/java/com/jphalford/aoc/day3/Day3.java)
+**Entry Point:** [Day3](./src/main/java/com/jphalford/aoc/day3/Day3.java)
 
 Following some discussion on the Map as a class, and how anything can be a stream... An 
 attempt to abandon classes, readability and shoehorn the solution into a stream. I have
