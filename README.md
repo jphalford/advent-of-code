@@ -14,6 +14,8 @@ they get too challenging).
 
 ## Day 1 - Report Repair 
 
+**Entry Point:** [ExpenseReportRepairer](./src/main/java/com/jphalford/aoc/day1/ExpenseReportRepairer.java)
+
 The first day on the job and since part 1 was in essence a search problem, I
 decided to implement in the most obvious way and think later. Once I had obtained the
 start I set about measuring the performance and then improving my solution with 
@@ -43,6 +45,8 @@ Part2Benchmarks.part2BruteForce  avgt    6  0.020 ±  0.001  ms/op
 
 ## Day 2: Password Philosophy
 
+**Entry Point:** [Day2](./src/main/java/com/jphalford/aoc/day2/Day2.java)
+
 I forgot about the experiment at the start of this challenge, but after completing the first
 part an opportunity presented itself. The solution makes use of the [Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern) 
 strategy to encapsulate the corporate policy validation algorithms under the `CorporatePolicyValidator` 
@@ -50,6 +54,9 @@ interface. The `CompliantPasswordCounter` can then be implemented and test
 
 
 ## Day 3: Toboggan Trajectory
+
+**Entry Point:** [Day2](./src/main/java/com/jphalford/aoc/day3/Day3.java)
+
 Following some discussion on the Map as a class, and how anything can be a stream... An 
 attempt to abandon classes, readability and shoehorn the solution into a stream. I have
 conflicting feelings on the result. 
