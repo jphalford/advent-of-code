@@ -10,7 +10,7 @@ they get too challenging).
 | 1 | Report Repair | Using Java Microbenchmark Harness (JMH) |
 | 2 | Password Philosophy | The Strategy Pattern |
 | 3 | Toboggan Trajectory | Abandoning design and readability |
-
+| 4 | Passport Processing | Another Tool For Language Recognition |
 
 ## Day 1 - Report Repair 
 
@@ -60,4 +60,13 @@ interface. The `CompliantPasswordCounter` can then be implemented and test
 Following some discussion on the Map as a class, and how anything can be a stream... An 
 attempt to abandon classes, readability and shoehorn the solution into a stream. I have
 conflicting feelings on the result. 
+
+
+## Day 4: Passport Processing
+
+**Entry Point:** [Day4](./src/main/java/com/jphalford/aoc/day4/Day4.java)
+
+It's been a long time since I was asked to write a compiler as part of my CompSci course
+but the description of this task seemed to give the minimal excuse required to engage with my inner 
+reindeer and get my ANTLRs on.
 

@@ -1,5 +1,6 @@
 plugins {
     id 'application'
+    id 'antlr'
 }
 
 group 'com.jphalford.aoc'
@@ -8,6 +9,7 @@ version '1.0-SNAPSHOT'
 ext {
     jUnitJupiterVersion = "5.7.0"
     jmhVersion = "1.26"
+    antlrVersion = "4.9"
 }
 
 repositories {
@@ -15,6 +17,9 @@ repositories {
 }
 
 dependencies {
+    antlr "org.antlr:antlr4:$antlrVersion"
+    compile "org.antlr:antlr4-runtime:$antlrVersion"
+
 
     compileOnly 'org.projectlombok:lombok:1.18.16'
     annotationProcessor 'org.projectlombok:lombok:1.18.16'
@@ -50,8 +55,4 @@ task testPerformance(type: Test) {
     useJUnitPlatform {
         includeTags 'benchmark'
     }
-}
-
-application {
-    mainClass 'com.jphalford.aoc.Main'
 }

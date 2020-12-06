@@ -3,21 +3,25 @@ package com.jphalford.aoc;
 import com.jphalford.aoc.day1.ExpenseReportRepairer;
 import com.jphalford.aoc.day2.Day2;
 import com.jphalford.aoc.day3.Day3;
+import com.jphalford.aoc.day4.Day4;
 import com.jphalford.aoc.util.InputReader;
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
 
 import java.io.IOException;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        day1();
-        day2();
-        day3();
+//        day1();
+//        day2();
+//        day3();
+        day4();
     }
 
 
     private static void day1() throws IOException {
-        List<String> expenseReport = InputReader.forDay(1);
+        List<String> expenseReport = InputReader.allLinesForDay(1);
         ExpenseReportRepairer expenseReportRepairer = new ExpenseReportRepairer();
         reportResult(1, 1, expenseReportRepairer.solvePart1BruteForce(expenseReport).toPlainString());
         reportResult(1, 1, expenseReportRepairer.solvePart1BruteForceStreams(expenseReport).toPlainString());
@@ -26,17 +30,24 @@ public class Main {
     }
 
     private static void day2() throws IOException {
-        List<String> passwordReport = InputReader.forDay(2);
+        List<String> passwordReport = InputReader.allLinesForDay(2);
         Day2 day2 = new Day2();
         reportResult(2, 1, Long.toString(day2.solvePart1(passwordReport)));
         reportResult(2, 2, Long.toString(day2.solvePart2(passwordReport)));
     }
 
     private static void day3() throws IOException {
-        List<String> passwordReport = InputReader.forDay(3);
+        List<String> passwordReport = InputReader.allLinesForDay(3);
         Day3 day3 = new Day3();
         reportResult(3, 1, Long.toString(day3.solvePart1(passwordReport)));
         reportResult(3, 2, Long.toString(day3.solvePart2(passwordReport)));
+    }
+
+    private static void day4() throws IOException {
+        Day4 day4 = new Day4();
+        CharStream passportData = CharStreams.fromPath(InputReader.pathForDay(4));
+//        reportResult(4, 1, Long.toString(day4.solvePart1(passportData)));
+        reportResult(4, 2, Long.toString(day4.solvePart2(passportData)));
     }
 
     private static void reportResult(int day, int part, String result) {
