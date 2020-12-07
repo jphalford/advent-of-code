@@ -4,6 +4,7 @@ import com.jphalford.aoc.day1.ExpenseReportRepairer;
 import com.jphalford.aoc.day2.Day2;
 import com.jphalford.aoc.day3.Day3;
 import com.jphalford.aoc.day4.Day4;
+import com.jphalford.aoc.day5.Day5;
 import com.jphalford.aoc.util.InputReader;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
@@ -16,7 +17,8 @@ public class Main {
 //        day1();
 //        day2();
 //        day3();
-        day4();
+//        day4();
+        day5();
     }
 
 
@@ -46,8 +48,15 @@ public class Main {
     private static void day4() throws IOException {
         Day4 day4 = new Day4();
         CharStream passportData = CharStreams.fromPath(InputReader.pathForDay(4));
-//        reportResult(4, 1, Long.toString(day4.solvePart1(passportData)));
+        reportResult(4, 1, Long.toString(day4.solvePart1(passportData)));
         reportResult(4, 2, Long.toString(day4.solvePart2(passportData)));
+    }
+
+    private static void day5() throws IOException {
+        Day5 day5 = new Day5();
+        List<String> seatCodes = InputReader.allLinesForDay(5);
+        reportResult(5, 1, Integer.toString(day5.solvePart1(seatCodes)));
+        reportResult(5, 2, Long.toString(day5.solvePart2(seatCodes)));
     }
 
     private static void reportResult(int day, int part, String result) {

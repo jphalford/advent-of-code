@@ -11,6 +11,7 @@ they get too challenging).
 | 2 | Password Philosophy | The Strategy Pattern |
 | 3 | Toboggan Trajectory | Abandoning design and readability |
 | 4 | Passport Processing | Another Tool For Language Recognition |
+| 5 | Binary Boarding | Bit-shifting |
 
 ## Day 1 - Report Repair 
 
@@ -70,3 +71,10 @@ It's been a long time since I was asked to write a compiler as part of my CompSc
 but the description of this task seemed to give the minimal excuse required to engage with my inner 
 reindeer and get my ANTLRs on.
 
+
+## Day 5: 
+
+**Entry Point:** [Day5](./src/main/java/com/jphalford/aoc/day5/Day5.java)
+
+Since the description is a roundabout way of describing a 10 bit number; time to dust off the `<<` 
+operator and get back into the C/Objective-C bit shifting, enum overlaying groove from the early days of my career. 
