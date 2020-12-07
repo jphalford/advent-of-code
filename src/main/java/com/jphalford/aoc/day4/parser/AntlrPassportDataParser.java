@@ -1,8 +1,6 @@
 package com.jphalford.aoc.day4.parser;
 
 import com.jphalford.aoc.day4.PassportData;
-import com.jphalford.aoc.day4.PassportLexer;
-import com.jphalford.aoc.day4.PassportParser;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 

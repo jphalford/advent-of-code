@@ -12,6 +12,7 @@ they get too challenging).
 | 3 | Toboggan Trajectory | Abandoning design and readability |
 | 4 | Passport Processing | Another Tool For Language Recognition |
 | 5 | Binary Boarding | Bit-shifting |
+| 6 | Custom Customs | Sets and Streams |
 
 ## Day 1 - Report Repair 
 
@@ -77,4 +78,12 @@ reindeer and get my ANTLRs on.
 **Entry Point:** [Day5](./src/main/java/com/jphalford/aoc/day5/Day5.java)
 
 Since the description is a roundabout way of describing a 10 bit number; time to dust off the `<<` 
-operator and get back into the C/Objective-C bit shifting, enum overlaying groove from the early days of my career. 
+operator and get back into the C/Objective-C bit shifting, enum overlaying groove from the early days of my career.
+
+
+## Day 6: 
+
+**Entry Point:** [Day6](./src/main/java/com/jphalford/aoc/day6/Day6.java)
+
+ANTLRs back on, this time with the correct Parser code to easily retrieve the tokens 
+and out with the Set streaming/grouping.

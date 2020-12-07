@@ -3,8 +3,6 @@ package com.jphalford.aoc.day2.policy;
 import com.jphalford.aoc.day2.input.CorporatePolicyAndPassword;
 import org.junit.jupiter.api.Test;
 
-import static java.util.Arrays.asList;
-import static java.util.Collections.singletonList;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

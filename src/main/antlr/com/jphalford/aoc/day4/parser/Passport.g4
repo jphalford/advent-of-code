@@ -1,7 +1,7 @@
 grammar Passport;
 
 @header {
-package com.jphalford.aoc.day4;
+package com.jphalford.aoc.day4.parser;
 }
 
 batchFile: passport* EOF;

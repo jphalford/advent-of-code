@@ -1,8 +1,6 @@
 package com.jphalford.aoc.day4.parser;
 
-import com.jphalford.aoc.day4.PassportBaseListener;
 import com.jphalford.aoc.day4.PassportData;
-import com.jphalford.aoc.day4.PassportParser;
 
 import java.util.ArrayList;
 import java.util.List;
