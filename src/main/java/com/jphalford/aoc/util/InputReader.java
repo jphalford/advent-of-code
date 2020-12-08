@@ -15,7 +15,7 @@ public final class InputReader {
     }
 
     public static CharStream charStreamForDay(int dayNum) throws IOException {
-        return CharStreams.fromPath(pathForDay(6));
+        return CharStreams.fromPath(pathForDay(dayNum));
     }
 
     public static Path pathForDay(int dayNum) {

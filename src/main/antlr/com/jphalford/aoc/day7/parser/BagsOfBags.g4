@@ -6,12 +6,12 @@ package com.jphalford.aoc.day7.parser;
 
 batchFile: bagDefinition+ EOF;
 
-bagDefinition: bagId bagSeperator (bagCount+ | noBags) bagDefinitionTerminator;
+bagDefinition: bagId bagSeperator (bagContent+ | noBags) bagDefinitionTerminator;
 
-bagCount: NUMBER bagId bagCountSeperator;
+bagContent: NUMBER bagId bagCotentsSeperator;
 
 bagSeperator: 'bags' 'contain';
-bagCountSeperator: 'bags'  COMMA?;
+bagCotentsSeperator: ('bag' | 'bags')  COMMA?;
 noBags: 'no' 'other' 'bags';
 bagId: WORD WORD;
 bagDefinitionTerminator: DOT NEWLINE?;
@@ -19,6 +19,6 @@ bagDefinitionTerminator: DOT NEWLINE?;
 NUMBER: [0-9]+;
 COMMA : ',';
 DOT : '.';
-NEWLINE : [\r\n];
+NEWLINE : ('\r'?)'\n';
 WORD: [a-zA-Z]+;
 SPACE: [ \t]+ -> skip ;
