@@ -14,6 +14,7 @@ they get too challenging).
 | 5 | Binary Boarding | Bit-shifting |
 | 6 | Custom Customs | Sets and Streams |
 | 7 | Handy Haversacks | Recursion |
+| 8 | Handheld Halting | The Tortoise and the Hare |
 
 ## Day 1 - Report Repair 
 
@@ -95,3 +96,10 @@ and out with the Set streaming/grouping.
 **Entry Point:** [Day7](./src/main/java/com/jphalford/aoc/day7/Day7.java)
 
 I don't normally trust recursion to let me sleep at night, but here we go...
+
+
+## Day 8: Handheld Halting
+
+After starting Part 1 by tracking visited instructions, I decided to implement a memory
+efficient mechanism of cycle-detection using Floyd's Tortoise and Hare algorithm. Given the size of the
+input data, it's not really necessary but Christmas is a time of excess.
