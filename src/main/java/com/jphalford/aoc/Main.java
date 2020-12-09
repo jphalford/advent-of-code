@@ -8,6 +8,7 @@ import com.jphalford.aoc.day5.Day5;
 import com.jphalford.aoc.day6.Day6;
 import com.jphalford.aoc.day7.Day7;
 import com.jphalford.aoc.day8.Day8;
+import com.jphalford.aoc.day9.Day9;
 import com.jphalford.aoc.util.InputReader;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
@@ -24,7 +25,8 @@ public class Main {
 //        day5();
 //        day6();
 //        day7();
-        day8();
+//        day8();
+        day9();
     }
 
 
@@ -82,6 +84,12 @@ public class Main {
         Day8 day8 = new Day8();
         reportResult(8, 1, Long.toString(day8.solvePart1(InputReader.allLinesForDay(8))));
         reportResult(8, 2, Long.toString(day8.solvePart2(InputReader.allLinesForDay(8))));
+    }
+
+    private static void day9() throws IOException {
+        Day9 day9 = new Day9();
+        reportResult(9, 1, Long.toString(day9.solvePart1(InputReader.allLinesForDay(9))));
+        reportResult(9, 2, Long.toString(day9.solvePart2(InputReader.allLinesForDay(9))));
     }
 
     private static void reportResult(int day, int part, String result) {

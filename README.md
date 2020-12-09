@@ -15,6 +15,7 @@ they get too challenging).
 | 6 | Custom Customs | Sets and Streams |
 | 7 | Handy Haversacks | Recursion |
 | 8 | Handheld Halting | The Tortoise and the Hare |
+| 8 | Encoding Error | Composite Datastructures |
 
 ## Day 1 - Report Repair 
 
@@ -100,6 +101,17 @@ I don't normally trust recursion to let me sleep at night, but here we go...
 
 ## Day 8: Handheld Halting
 
+**Entry Point:** [Day8](./src/main/java/com/jphalford/aoc/day8/Day8.java)
+
 After starting Part 1 by tracking visited instructions, I decided to implement a memory
 efficient mechanism of cycle-detection using Floyd's Tortoise and Hare algorithm. Given the size of the
 input data, it's not really necessary but Christmas is a time of excess.
+
+
+## Day 9: Encoding Error
+
+**Entry Point:** [Day9](./src/main/java/com/jphalford/aoc/day9/Day9.java)
+
+A short giggle at the XMAS Cracker joke (how many have I missed I wonder...) and
+a chance to construct a hybrid datastructure, a FILO TreeSet; other classes from reputable
+sources are available.
