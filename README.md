@@ -15,7 +15,8 @@ they get too challenging).
 | 6 | Custom Customs | Sets and Streams |
 | 7 | Handy Haversacks | Recursion |
 | 8 | Handheld Halting | The Tortoise and the Hare |
-| 8 | Encoding Error | Composite Datastructures |
+| 9 | Encoding Error | Composite Datastructures |
+| 10 | Adapter Array | Backtracking with Brute Force and Ignorance |
 
 ## Day 1 - Report Repair 
 
@@ -115,3 +116,12 @@ input data, it's not really necessary but Christmas is a time of excess.
 A short giggle at the XMAS Cracker joke (how many have I missed I wonder...) and
 a chance to construct a hybrid datastructure, a FILO TreeSet; other classes from reputable
 sources are available.
+
+## Day 10: Adapter Array
+
+**Entry Point:** [Day10](./src/main/java/com/jphalford/aoc/day10/Day10.java)
+
+There is a clever way to solve this using factorisation, this is not that way. Instead,
+the paths through are treated as a graph and I backtrack from the end to the start. Since
+the input is small, a cache of the previously visited counts makes this possible to run in 
+a short time period.

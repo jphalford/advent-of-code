@@ -1,6 +1,7 @@
 package com.jphalford.aoc;
 
 import com.jphalford.aoc.day1.ExpenseReportRepairer;
+import com.jphalford.aoc.day10.Day10;
 import com.jphalford.aoc.day2.Day2;
 import com.jphalford.aoc.day3.Day3;
 import com.jphalford.aoc.day4.Day4;
@@ -26,7 +27,8 @@ public class Main {
 //        day6();
 //        day7();
 //        day8();
-        day9();
+//        day9();
+        day10();
     }
 
 
@@ -90,6 +92,13 @@ public class Main {
         Day9 day9 = new Day9();
         reportResult(9, 1, Long.toString(day9.solvePart1(InputReader.allLinesForDay(9))));
         reportResult(9, 2, Long.toString(day9.solvePart2(InputReader.allLinesForDay(9))));
+    }
+
+
+    private static void day10() throws IOException {
+        Day10 day10 = new Day10();
+        reportResult(10, 1, Long.toString(day10.solvePart1(InputReader.allLinesForDay(10))));
+        reportResult(10, 2, Long.toString(day10.solvePart2(InputReader.allLinesForDay(10))));
     }
 
     private static void reportResult(int day, int part, String result) {
