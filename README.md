@@ -6,4 +6,4 @@
 |--------------------------|-----|
 | [2020](./2020/README.md) | Java, with a focus on trying new libraries and techniques with each task |
 | [2021](./2021/README.md) | Undecided, possibly a polyglot year |
- | 
+ 
