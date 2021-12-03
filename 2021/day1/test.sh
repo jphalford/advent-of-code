@@ -1,6 +1,8 @@
 #!/bin/sh
 
-result=`sh ./src/part1.sh < ./data/day1-example.txt`
+export PATH="`pwd`/src:$PATH"
+
+result=`part1.sh < ./data/day1-example.txt`
 
 if [ $result = "7" ]
 then
@@ -10,7 +12,7 @@ else
 fi
 
 
-result=`sh ./src/part2.sh < ./data/day1-example.txt`
+result=`part2.sh < ./data/day1-example.txt`
 
 if [ $result = "5" ]
 then
