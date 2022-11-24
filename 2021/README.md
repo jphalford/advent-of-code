@@ -6,6 +6,8 @@
 | Day | Title | Approach |
 |:---:|-------|------------|
 | 1 | Sonar Sweep | Quick and dirty with SH |
+| 2 | Dive! | squ-AWK |
+| 3 | Binary Diagnostic | Combining SH and AW (SHqAWK) |
 
 ## Day 1 - Sonar Sweep
 

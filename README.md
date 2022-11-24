@@ -5,5 +5,5 @@
 | Year | Language | 
 |--------------------------|-----|
 | [2020](./2020/README.md) | Java, with a focus on trying new libraries and techniques with each task |
-| [2021](./2021/README.md) | Undecided, possibly a polyglot year |
+| [2021](./2021/README.md) | Heroes in a half-Shell scripts!|
  
